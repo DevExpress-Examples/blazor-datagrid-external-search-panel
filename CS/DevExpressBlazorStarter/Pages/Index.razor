@@ -28,15 +28,15 @@
     }
 
     void OnHtmlDataCellDecoration(DataGridHtmlDataCellDecorationEventArgs<WeatherForecast> e) {
-        if (e.Field == nameof(WeatherForecast.Date)) {
+        if (e.FieldName == nameof(WeatherForecast.Date)) {
             if (e.DataItem.Date.ToString().Contains(Filter)) {
                 e.CssClass = "filtered";
             }
-        } else if (e.Field == nameof(WeatherForecast.TemperatureC)) {
+        } else if (e.FieldName == nameof(WeatherForecast.TemperatureC)) {
             if (e.DataItem.TemperatureC.ToString().Contains(Filter)) {
                 e.CssClass = "filtered";
             }
-        } else if (e.Field == nameof(WeatherForecast.TemperatureF)) {
+        } else if (e.FieldName == nameof(WeatherForecast.TemperatureF)) {
             if (e.DataItem.TemperatureF.ToString().Contains(Filter)) {
                 e.CssClass = "filtered";
             }
