@@ -8,5 +8,5 @@ While the Search Panel is not supported for the DataGrid component, this example
 
 *Files to look at*:
 
-* [Index.razor](https://github.com/DevExpress-Examples/DataGrid-How-to-implement-an-external-search-panel/blob/19.2.4%2B/CS/DevExpressBlazorStarter/Pages/Index.razor)
-* [_Host.cshtml](https://github.com/DevExpress-Examples/DataGrid-How-to-implement-an-external-search-panel/blob/19.2.4%2B/CS/DevExpressBlazorStarter/Pages/_Host.cshtml)
+* [Index.razor](https://github.com/DevExpress-Examples/DataGrid-How-to-implement-an-external-search-panel/blob/20.1.6+/CS/DevExpressBlazorStarter/Pages/Index.razor)
+* [_Host.cshtml](https://github.com/DevExpress-Examples/DataGrid-How-to-implement-an-external-search-panel/blob/20.1.6+/CS/DevExpressBlazorStarter/Pages/_Host.cshtml)
