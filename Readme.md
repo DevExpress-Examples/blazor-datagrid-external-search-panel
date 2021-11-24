@@ -6,7 +6,7 @@
 
 # DataGrid for Blazor - How to implement an external Search Panel
 
-You can create a [filer row](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxDataGrid-1.ShowFilterRow) in the Data Grid component. The filter row searches for the entered text in one column. If you wish to look for the entered text in all Data Grid's columns, implement an external search panel.
+You can create a [filer row](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxDataGrid-1.ShowFilterRow) in the Data Grid component. The filter row searches for the entered text in one column. If you want to look for the entered text in all Data Grid's columns, implement an external search panel.
 
 ![External Search Panel](images/DataGrid.png)
 
