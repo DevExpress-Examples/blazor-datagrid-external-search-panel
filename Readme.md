@@ -6,11 +6,11 @@
 
 # DataGrid for Blazor - How to implement an external Search Panel
 
-You can create a [filer row](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxDataGrid-1.ShowFilterRow) in the Data Grid component. However, the filer row cannot be placed outside the component's boundaries. This example shows how to implement an external search panel that searches for the entered text in all columns.
+You can create a [filer row](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxDataGrid-1.ShowFilterRow) in the Data Grid component. The filter row searches for the entered text in one column. If you wish to look for the entered text in all Data Grid's columns, implement an external search panel.
 
 ![External Search Panel](images/DataGrid.png)
 
-Place the Text Box component in the page markup. Implement the search function in the the Text Box's [TextChanged](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTextBox.TextChanged) event. 
+To achieve this, place the Text Box component in the page markup and implement the search function in the the Text Box's [TextChanged](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxTextBox.TextChanged) event. 
 
 ## Files to Look At
 
