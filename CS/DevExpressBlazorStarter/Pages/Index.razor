@@ -8,7 +8,11 @@
 
 <DxTextBox NullText="Enter text to search" Text="@Filter" TextChanged="OnTextChanged"></DxTextBox>
 
-<DxDataGrid Data="@Forecasts" PageSize="5" CssClass="my-grid" ShowFilterRow="true" HtmlDataCellDecoration="OnHtmlDataCellDecoration"
+<DxDataGrid Data="@Forecasts" 
+            PageSize="5" 
+            CssClass="my-grid" 
+            ShowFilterRow="true" 
+            HtmlDataCellDecoration="OnHtmlDataCellDecoration"
             ShowPager="false">
     <DxDataGridColumn Field="@nameof(WeatherForecast.Date)"></DxDataGridColumn>
     <DxDataGridColumn Field="@nameof(WeatherForecast.TemperatureC)"></DxDataGridColumn>
@@ -46,7 +50,6 @@
 
     List<WeatherForecast> Forecasts;
     List<WeatherForecast> AllForecasts;
-
     private WeatherForecast forecast;
 
     protected override async Task OnInitializedAsync() {
