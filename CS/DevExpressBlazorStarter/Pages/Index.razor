@@ -8,9 +8,12 @@
 
 <DxTextBox NullText="Enter text to search" Text="@Filter" TextChanged="OnTextChanged"></DxTextBox>
 
-<DxDataGrid Data="@Forecasts" PageSize="5" CssClass="my-grid" ShowFilterRow="true" HtmlDataCellDecoration="OnHtmlDataCellDecoration"
-            ShowPager="false"
-            @bind-SingleSelectedDataRow="@Forecast">
+<DxDataGrid Data="@Forecasts" 
+            PageSize="5" 
+            CssClass="my-grid" 
+            ShowFilterRow="true" 
+            HtmlDataCellDecoration="OnHtmlDataCellDecoration"
+            ShowPager="false">
     <DxDataGridColumn Field="@nameof(WeatherForecast.Date)"></DxDataGridColumn>
     <DxDataGridColumn Field="@nameof(WeatherForecast.TemperatureC)"></DxDataGridColumn>
     <DxDataGridColumn Field="@nameof(WeatherForecast.TemperatureF)"></DxDataGridColumn>
@@ -47,13 +50,7 @@
 
     List<WeatherForecast> Forecasts;
     List<WeatherForecast> AllForecasts;
-
     private WeatherForecast forecast;
-
-    public WeatherForecast Forecast {
-        get { return forecast; }
-        set { forecast = value; }
-    }
 
     protected override async Task OnInitializedAsync() {
         AllForecasts = Forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
