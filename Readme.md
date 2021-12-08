@@ -14,8 +14,8 @@ To achieve this, place the Text Box component in the page markup and implement t
 
 ## Files to Look At
 
-* [Index.razor](https://github.com/DevExpress-Examples/DataGrid-How-to-implement-an-external-search-panel/blob/20.1.6+/CS/DevExpressBlazorStarter/Pages/Index.razor)
-* [_Host.cshtml](https://github.com/DevExpress-Examples/DataGrid-How-to-implement-an-external-search-panel/blob/20.1.6+/CS/DevExpressBlazorStarter/Pages/_Host.cshtml)
+* [Index.razor](./CS/DevExpressBlazorStarter/Pages/Index.razor)
+* [_Host.cshtml](./CS/DevExpressBlazorStarter/Pages/_Host.cshtml)
 
 ## Documentation
 
