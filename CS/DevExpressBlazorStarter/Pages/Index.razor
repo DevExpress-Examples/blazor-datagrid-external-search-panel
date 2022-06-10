@@ -1,9 +1,6 @@
 ﻿@page "/"
-
 @using DevExpressBlazorStarter.Data
 @inject IJSRuntime JSRuntime;
-
-
 @inject WeatherForecastService ForecastService
 
 <DxTextBox NullText="Enter text to search" Text="@Filter" TextChanged="OnTextChanged"></DxTextBox>
@@ -47,7 +44,6 @@
     }
 
     string Filter = string.Empty;
-
     List<WeatherForecast> Forecasts;
     List<WeatherForecast> AllForecasts;
     private WeatherForecast forecast;
@@ -55,5 +51,4 @@
     protected override async Task OnInitializedAsync() {
         AllForecasts = Forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
-
 }
